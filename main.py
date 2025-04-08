@@ -3,19 +3,14 @@ import os
 import pandas as pd
 import geopandas as gpd
 import numpy as np
+import rasterio
+from rasterio.mask import mask
+from shapely.geometry import mapping
 
 import CSV_Data_Utils as csv
 import Kernel_Utils
 import Kernels
 import SHP_Utils as shp
-from geopy.distance import geodesic
-import rasterio
-
-from xlsxwriter import Workbook
-
-from rasterio.transform import from_origin
-from rasterio.mask import mask
-from shapely.geometry import mapping
 
 
 def pharmacy_preprocess(path):
