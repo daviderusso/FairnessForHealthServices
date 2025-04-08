@@ -729,7 +729,7 @@ def compute_gini_national_bound(gdf, labels, fields, pop_field):
         print("---------------------------")
         print("---------------------------")
 
-    with open("/home/davide/Desktop/output.txt", 'w') as file:
+    with open("output.txt", 'w') as file:
         for item in results:
             file.write(f"{item}\n")
 
